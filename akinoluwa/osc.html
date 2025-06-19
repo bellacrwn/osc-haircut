@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>OLUWANII SIGNATURE CUTS</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #FFD700;
+      /* Gold */
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: -1px 1px 1px #6d6d6d;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: 0.1s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      /* text-shadow: 0 0 6px #FFD700;  */
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      background: #222;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #FFD700AA;
+      text-align: center;
+    }
+
+    .service h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .service p {
+      font-size: 1.1rem;
+    }
+
+    form {
+      background: #222;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px #FFD700AA;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: #FFD700;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #e6c200;
+    }
+
+    footer {
+      background: #000;
+      color: #FFD700;
+      text-align: center;
+      padding: 15px;
+      font-size: 1rem;
+      margin-top: 30px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+
+    img {
+      width: 200px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    OLUWANII SIGNATURE CUTS
+  </header>
+
+
+  <nav>
+    <a herf="#services"> Services </a>
+    <a href="#booking"> Book Now </a>
+    <a href="#contact"> Contact </a>
+  </nav>
+
+  <!-- <nav style="display: flex; justify-content: space-between; align-items: center; background: black; text-position:center; padding: 20px; color: white; position: relative;">
+    <div style="font-size: 50px; text-position: center; font-weight: bold; color:#FFD700;"> OLUWANII SIGNATURE CUTS </div>
+    <div style="font-size: 28px; cursor: pointer; display: none;" onclick="toggleMenu()" id="hamburger">☰</div>
+  <ul id="navLinks" style="list-style: none; display: flex; gap: 25px; margin: 0; padding: 0;">
+      <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">Home</a></li>
+      <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">About</a></li>
+      <li><a href="#" style="color: white; text-decoration: none; font-weight: 500;">Services</a></li>
+    </ul> 
+  </nav> -->
+
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+      <div class="service">
+        <h3>Haircut</h3>
+        <p>Fresh and stylish cuts starting at ₦1,000</p>
+      </div>
+      <div class="service">
+        <h3>Beard Trim</h3>
+        <p>Sharp and clean beard styling for ₦800</p>
+      </div>
+      <div class="service">
+        <h3>Hair Dye</h3>
+        <p>Vibrant colors and highlights from ₦2,000</p>
+      </div>
+      <div class="service">
+        <h3>Mobile Barbing</h3>
+        <p>We come to you! Starting at ₦2,500</p>
+      </div>
+      <div class="service">
+        <h3>Mobile Barbing</h3>
+        <p>We come to you! Starting at ₦2,500</p>
+      </div>
+      <div class="service">
+        <h3>Mobile Barbing</h3>
+        <p>We come to you! Starting at ₦2,500</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Appointment</h2>
+    <!-- <form id="bookingForm"> 
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required placeholder="Your name" />
+    
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required placeholder="+234 000 000 0000" />
+  
+<label for="service">Service</label>
+    <select id="service" required>
+      <option value="" disabled selected>Select a service</option>
+      <option value="Haircut">Haircut</option>
+      <option value="Beard Trim">Beard Trim</option>
+      <option value="Hair Dye">Hair Dye</option>
+      <option value="Mobile Barbing">Mobile Barbing</option>
+    </select>
+
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" required />
+    
+    <button type="submit">Book Now</button>
+  </form> -->
+
+    <form action="https://formsubmit.co/ayodejifaloore@gmail.com" method="POST">
+      <!-- Hidden field to disable CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required placeholder="Your name" />
+
+
+      <label for="phone">Phone Number ( Whatsapp) </label>
+      <input type="tel" id="phone" required placeholder="000 000 000 0000" />
+
+      <label for="address"> Address </label>
+      <input type="text" id="address" required placeholder="" />
+
+
+      <label for="service">Service Needed:</label>
+      <!--  <input type="text" name="service" required> -->
+      <select id="service" required>
+        <option value="" disabled selected>Select a service</option>
+        <option value="Haircut">Haircut</option>
+        <option value="Beard Trim">Beard Trim</option>
+        <option value="Hair Dye">Hair Dye</option>
+        <option value="Mobile Barbing">Mobile Barbing</option>
+      </select>
+
+      <label for="service"> Payment Method:</label>
+      <!--  <input type="text" name="service" required> -->
+      <select id="payment" required>
+        <option value="" disabled selected>Select a Paying Method</option>
+        <option value="Cash">Cash</option>
+        <option value="Transfer">Transfer</option>
+        <!--     <option value="Hair Dye">Hair Dye</option>
+      <option value="Mobile Barbing">Mobile Barbing</option> -->
+      </select>
+
+
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required />
+
+      <!--  <label for="time">Preferred Time:</label>
+  <input type="time" name="time" required> -->
+
+      <button type="submit">Book Appointment</button>
+    </form>
+  </section>
+
+  <center>
+    <img src="tapperfade.jpeg" alt="img" width="200px" height="200px">
+    <img src="afro.jpeg" alt="img" width="200px" height="200px">
+    <img src="lowcutafro.jpeg" alt="img" width="200px" height="200px"> <br>
+    <img src="lowcut.jpeg" alt="img" width="200px" height="200px">
+    <img src="tapper.jpeg" alt="img" width="200px" height="200px">
+    <img src="waveafro.jpeg" alt="img" width="200px" height="200px"> <br>
+    <img src="affro.jpeg" alt="img" width="200px" height="200px">
+    <img src="lowctzafro.jpeg" alt="img" width="200px" height="200px">
+    <img src="blackafro.jpeg.jpg" alt="img" width="200px" height="200px">
+
+  </center>
+
+
+  <!--  <i  class="fab fa-twitter"></i> -->
+
+  <!-- <section id="contact">
+    <h2>Contact Us</h2>
+    <i  class="fab fa-phone"></i>
+  <p style="text-align:center;">📍 Location: Ede, Osun State, Nigeria</p>
+  <p style="text-align:center;">💬 WhatsApp: +234 702 511 3434</p>
+</section> -->
+
+  <!-- <section id="contact"> 
+      <div style="flex:1; min-width:200px; position:cemter;">
+      <h3 style="margin-bottom: 10px; text-align:center;"> Contact Us </h3>
+      <p style="font-size: 20px;">
+        <a href="#" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"> <i class="fas fa-phone"> </i> 09160651960 </a><br>
+        <a href="#" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"> <i class="fas fa-location"> </i> Ede, Osun State</a><br>
+        <!- <a href="https://www.instagram.com/_ayodejigraphics?igsh=YzljYTk1ODg3Zg==" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"><i class="fab fa-instagram"></i></a> -->
+  <!--  <a href="https://wa.me/message/FWBQA462SGXQJ1" style="color:white; text-decoration:none;"><i class="fab fa-whatsapp"></i> 07025113434 </a> -->
+  <!--     </p>
+    </div>
+</section> -->
+
+  <footer>
+
+    <section id="contact">
+      <div style="flex:5; min-width:200px; position:center;">
+        <h3 style="margin-bottom: 15px; text-align:center; margin-top: -15px;"> Contact Us </h3>
+        <p style="font-size: 20px;">
+          <a href="#" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"> <i
+              class="fas fa-phone"> </i> 09160651960 </a>
+          <a href="#" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"> <i
+              class="fas fa-location"> </i> Ede, Osun State</a>
+          <a href="https://www.instagram.com/_ayodejigraphics?igsh=YzljYTk1ODg3Zg==" style="color:white; text-align:center; text-decoration:none; margin-right:10px;"><i class="fab fa-instagram"></i></a>  
+          <a href="https://wa.me/message/FWBQA462SGXQJ1" style="color:white; text-decoration:none;"><i
+              class="fab fa-whatsapp"></i> 07025113434 </a>
+        </p>
+      </div>
+    </section>
+    &copy; 2025 OLUWANII SIGNATURE CUTS - Sharp Hands, Clean Cuts, Blessed Brand.
+  </footer>
+
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for booking! We will contact you soon.');
+      this.reset();
+    });
+  </script>
+
+</body>
+
+</html>
